@@ -1,0 +1,25 @@
+@import '../utility/variables';
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    li {
+        display: block;
+        width: 20%;
+        flex-basis: 20%;
+        margin-left: $half-grid-space;
+        margin-right: $half-grid-space;
+        margin-bottom: $grid-spacing;
+        img {
+            width: 100%;
+            border-radius: 1em;
+            transition: 0.25s $bezier;
+            border: $border-glow;
+            &:hover {
+                border: 5px solid $border-glow;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

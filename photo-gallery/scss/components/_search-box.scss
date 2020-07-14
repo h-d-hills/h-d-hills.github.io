@@ -1,0 +1,24 @@
+@import '../utility/variables';
+
+header {
+    width: 75%;
+    margin: 2.5% auto;
+    .search-box {
+        height: 2em;
+        width: 50%;
+        border: solid 1px $search-box-color;
+        margin-left: 25%;
+        border-radius: 1em;
+        padding-left: calc(0.5em * 1.1);
+        padding-right: calc(0.5em * 1.1);
+        transition: 0.25s $bezier;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid $border-glow;
+            transform: scale(1.1);
+        }
+    }
+}

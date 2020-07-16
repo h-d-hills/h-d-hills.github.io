@@ -363,11 +363,13 @@ nav {
   display: flex;
   flex-direction: column;
   grid-area: nav;
+  padding: 1em 0;
 }
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 auto;
+  line-height: 1.5em;
 }
 
 div {
@@ -386,11 +388,13 @@ div img {
 
 #projects,
 #abt-hen {
-  margin: 0 5%;
+  padding: 0 5%;
 }
 
 #abt-hen {
   grid-area: about;
+  padding-bottom: 2em;
+  border-bottom: black dashed 1px;
 }
 #abt-hen img {
   width: 80%;
@@ -402,6 +406,7 @@ div img {
 }
 
 #gallery {
+  margin-top: 3em;
   background-color: #ff7f27;
 }
 
@@ -420,12 +425,16 @@ div img {
 #trivia {
   background-color: purple;
   color: white;
-  padding: 0 5%;
+  padding: 1em 5%;
   grid-area: trivia;
+  margin-bottom: 0;
+}
+#trivia h2 {
+  margin-top: 0;
 }
 
 #contact {
-  padding: 0 5%;
+  padding: 1em 5%;
   background-color: black;
   color: white;
   margin-bottom: 0;
@@ -434,6 +443,9 @@ div img {
 #contact a {
   color: #00a2e8;
   text-decoration: none;
+}
+#contact h2 {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

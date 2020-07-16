@@ -30,10 +30,12 @@ nav{
     display: flex;
     flex-direction: column;
     grid-area: nav;
+    padding: 1em 0;
     a{
         color: white;
         text-decoration: none;
         margin: 0 auto;
+        line-height: 1.5em;
     }
 }
 div{
@@ -51,7 +53,7 @@ div{
 }
 #projects,
 #abt-hen{
-    margin: 0 5%;
+    padding: 0 5%;
 }
 #abt-hen{
     img{
@@ -59,11 +61,14 @@ div{
         margin-left: 10%;
     }
     grid-area: about;
+    padding-bottom: 2em;
+    border-bottom: black dashed 1px;
 }
 #projects{
     grid-area: projects;
 }
 #gallery{
+    margin-top: 3em;
     background-color: $orange;
 }
 #dashboard{
@@ -78,11 +83,15 @@ div{
 #trivia{
     background-color: purple;
     color: white;
-    padding: 0 5%;
+    padding: 1em 5%;
     grid-area: trivia;
+    margin-bottom: 0;
+    h2{
+        margin-top: 0;
+    }
 }
 #contact{
-    padding: 0 5%;
+    padding: 1em 5%;
     background-color: black;
     color: white;
     margin-bottom: 0;
@@ -90,5 +99,8 @@ div{
     a{
         color: $blue;
         text-decoration: none;
+    }
+    h2{
+        margin-top: 0;
     }
 }

@@ -337,6 +337,10 @@ template {
   display: none;
 }
 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   display: grid;
   grid-template-columns: auto;
@@ -370,6 +374,16 @@ nav a {
   text-decoration: none;
   margin: 0 auto;
   line-height: 1.5em;
+  transition: 0.25s;
+}
+nav a:hover {
+  transform: scale(1.1) rotate(5deg);
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+}
+nav a:nth-child(2n):hover {
+  transform: scale(1.1) rotate(-5deg);
 }
 
 div {
@@ -399,27 +413,62 @@ div img {
 #abt-hen img {
   width: 80%;
   margin-left: 10%;
+  transition: 10s cubic-bezier(0.65, 0, 0.75, 0.99);
+}
+#abt-hen img:hover {
+  transform: scale(0) skew(90deg);
 }
 
 #projects {
   grid-area: projects;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "intro" "gallery" "dash" "game" "employee";
 }
-
-#gallery {
-  margin-top: 3em;
+#projects div {
+  transition: 0.25s;
+}
+#projects div p {
+  margin: 0 2em;
+  padding-bottom: 1.5em;
+}
+#projects div h3 {
+  padding-top: 0.1em;
+  font-size: 2em;
+}
+#projects div img {
+  width: 75%;
+  margin-left: 12.5%;
+}
+#projects div img:hover {
+  border: solid black 3px;
+}
+#projects div:hover {
+  transform: scale(1.05);
+  box-shadow: black 10px 5px;
+}
+#projects #intro {
+  margin-bottom: 3em;
+  border: solid red 3px;
+  padding: 1em;
+  grid-area: intro;
+}
+#projects #gallery {
   background-color: #ff7f27;
+  grid-area: gallery;
 }
-
-#dashboard {
+#projects #dashboard {
   background-color: #fff200;
+  grid-area: dash;
 }
-
-#game {
+#projects #game {
   background-color: #22b14c;
+  grid-area: game;
 }
-
-#employee {
+#projects #employee {
   background-color: #00a2e8;
+  grid-area: employee;
 }
 
 #trivia {
@@ -446,6 +495,44 @@ div img {
 }
 #contact h2 {
   margin-top: 0;
+}
+
+@media (min-width: 1020px) {
+  header {
+    padding-left: 2em;
+  }
+  header h3 {
+    margin: 0.75em 2em 0 auto;
+  }
+
+  nav,
+header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #abt-hen span {
+    display: flex;
+  }
+  #abt-hen span img {
+    width: 50%;
+    height: 50%;
+    margin-left: 0;
+  }
+  #abt-hen span div {
+    display: block;
+  }
+
+  #projects {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "intro intro" "gallery dash" "game employee";
+  }
+  #projects div {
+    margin-right: 2em;
+  }
+  #projects div:nth-child(2n+1) {
+    margin-right: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

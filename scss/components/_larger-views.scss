@@ -1,0 +1,40 @@
+@media(min-width: 1020px){
+    header{
+        padding-left: 2em;
+        h3{
+            margin: 0.75em 2em 0 auto;
+        }
+    }
+    nav,
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    #abt-hen{
+        span{
+            display: flex;
+            img{
+                width: 50%;
+                height: 50%;
+                margin-left: 0;
+            }
+            div{
+                display: block;
+            }
+        }
+    }
+    #projects{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'intro intro'
+            'gallery dash'
+            'game employee'
+        ;
+        div{
+            margin-right: 2em;
+            &:nth-child(2n+1){
+                margin-right: 0;
+            }
+        }
+    }
+}

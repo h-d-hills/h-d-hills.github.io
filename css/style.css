@@ -454,6 +454,13 @@ div img {
   padding: 1em;
   grid-area: intro;
 }
+#projects #intro p {
+  margin: 0;
+}
+#projects #intro:hover {
+  transform: scale(1);
+  box-shadow: black 0 0;
+}
 #projects #gallery {
   background-color: #ff7f27;
   grid-area: gallery;

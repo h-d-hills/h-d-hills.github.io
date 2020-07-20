@@ -482,6 +482,23 @@ div img {
   margin-top: 0;
 }
 
+#hidden-content {
+  display: none;
+}
+
+#slide-down {
+  color: white;
+  position: absolute;
+  background-color: purple;
+  text-align: center;
+  left: 45%;
+  width: 10%;
+}
+#slide-down h2 {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
 #contact {
   padding: 1em 5%;
   background-color: black;

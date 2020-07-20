@@ -481,9 +481,16 @@ div img {
 #trivia h2 {
   margin-top: 0;
 }
+#trivia ul {
+  margin-bottom: 0;
+}
 
 #hidden-content {
   display: none;
+  background-color: purple;
+  margin-bottom: 0;
+  color: white;
+  padding: 1em 5%;
 }
 
 #slide-down {
@@ -491,16 +498,23 @@ div img {
   position: absolute;
   background-color: purple;
   text-align: center;
-  left: 45%;
-  width: 10%;
+  padding: 0 1em;
+  left: 25%;
+  right: 25%;
+  cursor: pointer;
 }
 #slide-down h2 {
   margin-top: 0;
   margin-bottom: 0.25em;
 }
+#slide-down p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
 
 #contact {
   padding: 1em 5%;
+  padding-top: 4em;
   background-color: black;
   color: white;
   margin-bottom: 0;
@@ -514,6 +528,11 @@ div img {
   margin-top: 0;
 }
 
+@media (min-width: 720px) {
+  #contact {
+    padding-top: 2.5em;
+  }
+}
 @media (min-width: 1020px) {
   header {
     padding-left: 2em;
@@ -549,6 +568,11 @@ header {
   }
   #projects div:nth-child(2n+1) {
     margin-right: 0;
+  }
+
+  #slide-down {
+    left: 37.5%;
+    right: 37.5%;
   }
 }
 

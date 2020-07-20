@@ -1,3 +1,8 @@
+@media(min-width: 720px){
+    #contact{
+        padding-top: 2.5em;
+    }
+}
 @media(min-width: 1020px){
     header{
         padding-left: 2em;
@@ -36,5 +41,9 @@
                 margin-right: 0;
             }
         }
+    }
+    #slide-down{
+        left: 37.5%;
+        right: 37.5%;
     }
 }

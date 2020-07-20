@@ -149,24 +149,38 @@ div{
     h2{
         margin-top: 0;
     }
+    ul{
+        margin-bottom: 0;
+    }
 }
 #hidden-content{
     display: none;
+    background-color: purple;
+    margin-bottom: 0;
+    color: white;
+    padding: 1em 5%;
 }
 #slide-down{
     color: white;
     position: absolute;
     background-color: purple;
     text-align: center;
-    left: 45%;
-    width: 10%;
+    padding: 0 1em;
+    left: 25%;
+    right: 25%;
+    cursor: pointer;
     h2{
         margin-top: 0;
         margin-bottom: 0.25em;
     }
+    p{
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
 }
 #contact{
     padding: 1em 5%;
+    padding-top: 4em;
     background-color: black;
     color: white;
     margin-bottom: 0;
